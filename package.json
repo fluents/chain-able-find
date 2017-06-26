@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "name": "chain-able-find",
+  "description": "find files synchronously, easily, with a chainable interface",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "ava --verbose",
+    "bench": "node bench/async && node bench/glob"
+  },
+  "todoDependencies": {
+    "bench-chain": "*",
+    "^ conflicting old fliplog": true
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "does-include": "*",
+    "doxdox": "2.0.2",
+    "fliplog": "1.x",
+    "globby": "*",
+    "jsdoc": "3.4.3",
+    "jsdoc-api": "3.0.0",
+    "jsdoc-babel": "0.3.0"
+  },
+  "dependencies": {
+    "chain-able": "4.0.0-beta.1",
+    "eslint-config-chain-able": "^1.0.0"
+  },
+  "ava": {
+    "files": [
+      "test/*.js",
+      "!test/fixtures/**"
+    ],
+    "source": [
+      "test/*.js",
+      "!dist/**/*"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false
+  },
+  "keywords": [
+    "fluent",
+    "chain-able",
+    "chainable",
+    "find",
+    "glob",
+    "node",
+    "match",
+    "wildcard"
+  ],
+  "license": "MIT",
+  "author": "aretecode <aretecode@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/aretecode/chain-able-find"
+  },
+  "homepage": "https://github.com/aretecode/chain-able-find",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aretecode/chain-able-find.git"
+  }
+}
